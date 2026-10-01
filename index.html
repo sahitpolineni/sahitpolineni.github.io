@@ -300,7 +300,7 @@ var DESIGN_PARTS = function(extra){
 };
 var projects = [
   { id:'smart-seat', kind:'inprogress', title:'Smart Seat', org:'UF Dream Team Engineering · Co-captain', date:'Fall 2026', dateSort:202609,
-    tags:['In progress','Design','Electrical'], cat:'Design team',
+    tags:['In Progress','Engineering Leadership','Requirements Definition','Design','Electrical'], cat:'Design team',
     img:'Concept sketches (add as the project develops)',
     sections:[
       ['The problem','Wheelchair users who can’t reposition themselves face tissue damage in as little as 30 minutes of sustained pressure, which can lead to sacral pressure wounds.','Overview'],
@@ -310,7 +310,7 @@ var projects = [
       ['What’s next','Defining requirements, generating concepts, and building the first prototype. This page will grow as the project develops.']
     ] },
   { id:'terumo', kind:'casestudy', label:'Internship', title:'Terumo Neuro', org:'R&D Engineering Intern', date:'Summer 2026', dateSort:202606,
-    tags:['Industry','DOE','Test fixtures','Tolerancing','Motion control'], cat:'Industry', img:{src:'terumo-logo.png',alt:'Terumo Neuro logo'},
+    tags:['Industry','Fiber Optics','DOE','Test Method Development','Fixture Design','Rapid Prototyping','Tolerancing'], cat:'Industry', img:{src:'terumo-logo.png',alt:'Terumo Neuro logo'},
     html:function(){
       var sub=function(t,o,a,i){return '<div class="sub"><h4>'+t+'</h4><dl><dt>Objective</dt><dd>'+o+'</dd><dt>Approach</dt><dd>'+a+'</dd><dt>Impact</dt><dd>'+i+'</dd></dl></div>'};
       return ''+
@@ -353,7 +353,7 @@ var projects = [
         '<li><strong>Verify before you build:</strong> the drawing-versus-part mismatch showed me to measure real hardware before designing around it.</li></ul></div>';
     } },
   { id:'jnj', kind:'casestudy', label:'Internship', title:'Johnson & Johnson MedTech', org:'Manufacturing Engineering Intern', date:'Summer 2025', dateSort:202506,
-    tags:['Industry','SolidWorks','Root cause analysis','DFMA','Vendor drawings'], cat:'Industry',
+    tags:['Industry','SolidWorks','Root Cause Analysis','DFMA','3D Printing','Vendor Drawings','Vendor Communication'], cat:'Industry',
     img:{src:'jnj-logo.png',alt:'J&J MedTech logo'},
     html:function(){
       var sub=function(t,o,a,i){return '<div class="sub"><h4>'+t+'</h4><dl><dt>Objective</dt><dd>'+o+'</dd><dt>Approach</dt><dd>'+a+'</dd><dt>Impact</dt><dd>'+i+'</dd></dl></div>'};
@@ -381,7 +381,7 @@ var projects = [
         '<li><strong>Designing for manufacture:</strong> specifying off-the-shelf parts, making vendor-ready drawings and applying DFMA principles.</li></ul></div>';
     } },
   { id:'tool-tracking', kind:'casestudy', title:'Operating Room Table Attachment', org:'UF Dream Team Engineering · Team captain', date:'Fall 2025', dateSort:202509,
-    tags:['SolidWorks','Electromechanical','3D printing','Raspberry Pi','Leadership'], cat:'Design team',
+    tags:['Engineering Leadership','Electromechanical Design','Requirements Definition','Stakeholder Management','SolidWorks','3D Printing','Raspberry Pi'], cat:'Design team',
     img:{src:'ort-cover.jpg',alt:'First prototype of the camera attachment clamped to a Mayo stand'},
     html:function(){
       var fig=function(src,alt,cap,cls){return '<figure class="'+(cls||'')+'"><img src="'+src+'" alt="'+alt+'" loading="lazy"><figcaption>'+cap+'</figcaption></figure>'};
@@ -432,7 +432,7 @@ var projects = [
         '<li><strong>Design for real users:</strong> a device only works if it fits the surgeon’s actual workflow and the hospital’s real sterilization process.</li></ul></div>';
     } },
   { id:'grip', kind:'casestudy', title:'Weightlifting Prosthetic', org:'Generational Relief in Prosthetics (GRiP) · Design team member', date:'2024\u201325', dateSort:202403,
-    tags:['User-centered design','Ideation','Blender','3D printing','Load testing'], cat:'Design team', img:{src:'grip-side.jpg',alt:'Side view of the 3D-printed weightlifting prosthetic showing the hook and straps'},
+    tags:['User-Centered Design','Problem Solving','Ideation','Blender','3D Printing','Load Testing'], cat:'Design team', img:{src:'grip-side.jpg',alt:'Side view of the 3D-printed weightlifting prosthetic showing the hook and straps'},
     html:function(){
       return ''+
       '<h3 class="sech">Overview</h3><div class="callout">A 3D-printed attachment that lets an adolescent with a disability affecting one hand lift weights. It straps onto the user\u2019s hand and hooks onto dumbbells, kettlebells, barbells and handled gym machines.</div>'+
@@ -448,7 +448,7 @@ var projects = [
       '<h3 class="sech">What I learned</h3><div class="part"><ul class="learn" style="margin-top:0"><li><strong>Design for the user first:</strong> every decision came back to what our user actually needed to do in the gym.</li><li><strong>Simple wins:</strong> fewer parts meant less for the user to adjust and less to go wrong in manufacturing.</li></ul></div>';
     } },
   { id:'suture', kind:'casestudy', title:'Suture Technique Tracking Glove', org:'Suture Pad and Surgical Design Team · Mechanical design', date:'2024\u201325', dateSort:202409,
-    tags:['Wearable','Enclosure design','3D printing','Arduino','Interdisciplinary'], cat:'Design team', img:'Photo of the glove and casing (coming soon)',
+    tags:['Wearable','Electromechanical Design','Enclosure Design','3D Printing','Arduino','Interdisciplinary'], cat:'Design team', img:'Photo of the glove and casing (coming soon)',
     html:function(){
       return ''+
       '<h3 class="sech">Overview</h3><div class="callout">A wearable glove that medical students wear while practicing sutures. An accelerometer on the back of the hand picks up quick jerks and abnormal movements, so students can review their data afterward, find their mistakes and improve their technique.</div>'+
@@ -467,7 +467,7 @@ var projects = [
       '<h3 class="sech">What I learned</h3><div class="part"><ul class="learn" style="margin-top:0"><li><strong>Design around the electronics:</strong> as the mechanical engineer, my job was to build an unobtrusive housing that worked for the components inside it, which meant learning what the electrical and software teams needed from my parts before designing them.</li><li><strong>Listen across disciplines:</strong> we first assumed a wrist band would work because we did not fully understand how accelerometers behave. When the EEs explained why it would not give good data, we pivoted quickly and kept moving.</li></ul></div>';
     } },
   { id:'cssalt', kind:'casestudy', label:'Research', title:'Medical Training Models', org:'UF College of Medicine \u00b7 CSSALT \u00b7 Research Assistant', date:'2024\u201325', dateSort:202408,
-    tags:['Silicone mold making','Casting','3D printing','Press-fit design','Rapid iteration'], cat:'Research',
+    tags:['Silicone Mold Making','Casting','3D Printing','Press-Fit Design','Rapid Iteration'], cat:'Research',
     img:{src:'cssalt-molds.jpg',alt:'Lab bench with 3D-printed mold parts and a silicone anatomical model'},
     html:function(){
       var sub=function(t,o,a,i){return '<div class="sub"><h4>'+t+'</h4><dl><dt>Objective</dt><dd>'+o+'</dd><dt>Approach</dt><dd>'+a+'</dd><dt>Impact</dt><dd>'+i+'</dd></dl></div>'};
@@ -488,7 +488,7 @@ var projects = [
       '<h3 class="sech">What I learned</h3><div class="part"><ul class="learn" style="margin-top:0"><li><strong>Mold making:</strong> how two-part silicone molds are designed and cast, from keyed alignment to degassing.</li><li><strong>Fast iteration:</strong> the lab gave me a lot of freedom on the Bambu Lab printers, and that is where I built my habit of printing early and iterating quickly.</li></ul></div>';
     } },
   { id:'dml', kind:'casestudy', label:'Class project', title:'Compressed-Air Engine', org:'Design and Manufacturing Laboratory \u00b7 UF coursework', date:'2025', dateSort:202503,
-    tags:['Manual milling','Lathe','CNC','Engineering drawings','GD&T'], cat:'Coursework',
+    tags:['Manual Milling','Lathe','CNC','Engineering Drawings','GD&T'], cat:'Coursework',
     img:{src:'dml-parts.jpg',alt:'Machined aluminum engine parts in a bin'},
     html:function(){
       var fig=function(src,alt,cap,cls){return '<figure class="'+cls+'"><img src="'+src+'" alt="'+alt+'" loading="lazy"><figcaption>'+cap+'</figcaption></figure>'};
@@ -508,7 +508,7 @@ var projects = [
 
 function cardImg(p){return typeof p.img==='object'?'<div class="imgbox"><img class="photo-fill" src="'+p.img.src+'" alt="'+p.img.alt+'" loading="lazy"></div>':'<div class="noimg" aria-hidden="true"><span>'+esc(p.title)+'</span></div>'}
 function heroImg(p){return typeof p.img==='object'?'<div class="hero-img"><img class="photo-fill" src="'+p.img.src+'" alt="'+p.img.alt+'"></div>':''}
-function tagHTML(t){return '<li class="tag'+(t==='Industry'||t==='In progress'?' k-industry':'')+'">'+t+'</li>'}
+function tagHTML(t){return '<li class="tag'+(t==='Industry'||t==='In Progress'?' k-industry':'')+'">'+t+'</li>'}
 function esc(s){return s.replace(/&/g,'&amp;')}
 document.getElementById('spot-tags').innerHTML = projects.find(function(p){return p.id==='tool-tracking'}).tags.map(tagHTML).join('');
 
