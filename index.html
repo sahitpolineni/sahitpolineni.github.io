@@ -203,7 +203,7 @@ figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}
 <header class="wrap intro" id="top">
   <div>
     <div class="who">
-      <img class="photo" src="img/headshot.jpg" alt="Sahit Polineni">
+      <img class="photo" src="headshot.jpg" alt="Sahit Polineni">
       <div>
         <h1>Sahit Polineni</h1>
         <p>Mechanical Engineering · University of Florida · May 2027</p>
@@ -240,7 +240,7 @@ figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}
 <section class="wrap" id="spotlight">
   <div class="head"><h2>Spotlight</h2></div>
   <article class="spot">
-    <div class="imgbox"><img class="photo-fill" src="img/ort-cover.jpg" alt="First prototype of the camera attachment mounted on a Mayo stand with surgical tools on the tray"></div>
+    <div class="imgbox"><img class="photo-fill" src="ort-cover.jpg" alt="First prototype of the camera attachment mounted on a Mayo stand with surgical tools on the tray"></div>
     <div class="spot-body">
       <span class="eyebrow">UF Dream Team Engineering · Team captain</span>
       <h3>Operating Room Table Attachment</h3>
@@ -310,7 +310,7 @@ var projects = [
       ['What’s next','Defining requirements, generating concepts, and building the first prototype. This page will grow as the project develops.']
     ] },
   { id:'terumo', kind:'casestudy', label:'Internship', title:'Terumo Neuro', org:'R&D Engineering Intern', date:'Summer 2026', dateSort:202606,
-    tags:['Industry','DOE','Test fixtures','Tolerancing','Motion control'], cat:'Industry', img:{src:'img/terumo-logo.png',alt:'Terumo Neuro logo'},
+    tags:['Industry','DOE','Test fixtures','Tolerancing','Motion control'], cat:'Industry', img:{src:'terumo-logo.png',alt:'Terumo Neuro logo'},
     html:function(){
       var sub=function(t,o,a,i){return '<div class="sub"><h4>'+t+'</h4><dl><dt>Objective</dt><dd>'+o+'</dd><dt>Approach</dt><dd>'+a+'</dd><dt>Impact</dt><dd>'+i+'</dd></dl></div>'};
       return ''+
@@ -354,7 +354,7 @@ var projects = [
     } },
   { id:'jnj', kind:'casestudy', label:'Internship', title:'Johnson & Johnson MedTech', org:'Manufacturing Engineering Intern', date:'Summer 2025', dateSort:202506,
     tags:['Industry','SolidWorks','Root cause analysis','DFMA','Vendor drawings'], cat:'Industry',
-    img:{src:'img/jnj-logo.png',alt:'J&J MedTech logo'},
+    img:{src:'jnj-logo.png',alt:'J&J MedTech logo'},
     html:function(){
       var sub=function(t,o,a,i){return '<div class="sub"><h4>'+t+'</h4><dl><dt>Objective</dt><dd>'+o+'</dd><dt>Approach</dt><dd>'+a+'</dd><dt>Impact</dt><dd>'+i+'</dd></dl></div>'};
       return ''+
@@ -382,13 +382,13 @@ var projects = [
     } },
   { id:'tool-tracking', kind:'casestudy', title:'Operating Room Table Attachment', org:'UF Dream Team Engineering · Team captain', date:'Fall 2025', dateSort:202509,
     tags:['SolidWorks','Electromechanical','3D printing','Raspberry Pi','Leadership'], cat:'Design team',
-    img:{src:'img/ort-cover.jpg',alt:'First prototype of the camera attachment clamped to a Mayo stand'},
+    img:{src:'ort-cover.jpg',alt:'First prototype of the camera attachment clamped to a Mayo stand'},
     html:function(){
       var fig=function(src,alt,cap,cls){return '<figure class="'+(cls||'')+'"><img src="'+src+'" alt="'+alt+'" loading="lazy"><figcaption>'+cap+'</figcaption></figure>'};
       return ''+
       '<h3 class="sech">Overview</h3><div class="callout">My team and I went from first concept to a working prototype of a camera system that mounts on a Mayo stand or back table and records which surgical tools get used. Before an operation, every tool the surgeon might need is sterilized and laid out, even though many are never touched. Each extra tool adds reprocessing cost for the hospital and lengthens setup. Knowing which tools actually get used is the first step to trimming those trays. The device also had to stay as unobtrusive as possible in the operating room.</div>'+
       '<div class="stats"><div class="stat"><b>$1M</b><span>Annual tool-processing waste the device is designed to address, as estimated by our surgeon sponsor</span></div><div class="stat"><b>5</b><span>Engineering students I led</span></div><div class="stat"><b>7</b><span>One-hour meetings from blank sheet to prototype</span></div></div>'+
-      '<div class="figs2">'+fig('img/ort-concept-cad.png','SolidWorks model of the initial concept: camera housing on an adjustable arm with a C-clamp mount','Initial concept in SolidWorks','contain')+fig('img/ort-cad.jpg','SolidWorks model of the revised attachment with camera housing, angled arm and clamp','Revised design in SolidWorks','contain')+'</div>'+
+      '<div class="figs2">'+fig('ort-concept-cad.png','SolidWorks model of the initial concept: camera housing on an adjustable arm with a C-clamp mount','Initial concept in SolidWorks','contain')+fig('ort-cad.jpg','SolidWorks model of the revised attachment with camera housing, angled arm and clamp','Revised design in SolidWorks','contain')+'</div>'+
       '<h3 class="sech">My role</h3><div class="part"><ul>'+
         '<li><strong>Engineering leadership:</strong> led a team of five through research, design, prototyping and early testing.</li>'+
         '<li><strong>Electromechanical design:</strong> worked on every technical piece, including materials research, electrical integration, CAD, prototyping and iteration.</li>'+
@@ -407,18 +407,18 @@ var projects = [
         '<li>As soon as the first prototype was printed, we fit-tested it on a real Mayo stand with the clamp we had sourced.</li>'+
         '<li>The clamp and the printed part it mated with did not match in size, so the device could not be secured reliably.</li>'+
         '<li>I traced the problem to how the interface geometry had been dimensioned, then redesigned it using a SolidWorks cavity feature and iterated on size until the parts fit properly.</li></ol>'+
-        fig('img/ort-fit-test.jpg','Printed arm clamped to a Mayo stand tray with a C-clamp during fit testing','Fit test on a Mayo stand','tall')+'</div>'+
-        '<div class="figs2" style="margin-top:12px">'+fig('img/ort-clamp-cad.png','SolidWorks model of the C-clamp seated in the printed mount block','Clamp and mount interface in SolidWorks','contain')+fig('img/ort-prototype.jpg','Full first prototype clamped to a Mayo stand with tools on the tray','Full prototype on a Mayo stand','tall')+'</div></div>'+
+        fig('ort-fit-test.jpg','Printed arm clamped to a Mayo stand tray with a C-clamp during fit testing','Fit test on a Mayo stand','tall')+'</div>'+
+        '<div class="figs2" style="margin-top:12px">'+fig('ort-clamp-cad.png','SolidWorks model of the C-clamp seated in the printed mount block','Clamp and mount interface in SolidWorks','contain')+fig('ort-prototype.jpg','Full first prototype clamped to a Mayo stand with tools on the tray','Full prototype on a Mayo stand','tall')+'</div></div>'+
       '<div class="part"><h4>Electrical: integrating the camera, Pi and display</h4><div class="challenge"><ol>'+
         '<li>No one on the team had electronics experience, including me, so I took on wiring and configuring the Raspberry Pi, camera module and display.</li>'+
         '<li>I worked through it with help from subject-matter experts, research, and methodically checking connections and configuration until the camera and Pi communicated correctly.</li>'+
         '<li>The display connected but would not render the live video feed. I documented the issue clearly and handed the project to the next captain before studying abroad the following semester.</li></ol>'+
-        fig('img/ort-housing.jpg','Printed camera housing holding a Raspberry Pi display and battery pack','Electronics in the printed housing','tall')+'</div></div>'+
+        fig('ort-housing.jpg','Printed camera housing holding a Raspberry Pi display and battery pack','Electronics in the printed housing','tall')+'</div></div>'+
       '<div class="part"><h4>Clinical: designing for the operating room</h4><ol style="margin:6px 0 12px;padding-left:20px">'+
         '<li>I worked directly with our client, a general surgeon, to turn what he needed in the operating room (fast setup, minimal disruption to his workflow) into concrete engineering constraints.</li>'+
         '<li>I met with the hospital’s director of sterile processing to learn which sterilization methods were viable, and what that meant for materials and where components could sit relative to the sterile field.</li>'+
         '<li>Every new design decision went back to the surgeon and sterile processing for confirmation, which kept stakeholder communication constant throughout the project.</li></ol>'+
-        '<div class="figs2">'+fig('img/ort-mayo-draped.jpg','Mayo stand covered with a blue sterile drape','Mayo stand with draping','tall')+fig('img/ort-back-table.jpg','Stainless steel back table and Mayo stand in a hospital hallway','Back table and Mayo stand','tall')+'</div></div>'+
+        '<div class="figs2">'+fig('ort-mayo-draped.jpg','Mayo stand covered with a blue sterile drape','Mayo stand with draping','tall')+fig('ort-back-table.jpg','Stainless steel back table and Mayo stand in a hospital hallway','Back table and Mayo stand','tall')+'</div></div>'+
       '<div class="part"><h4>Timeline</h4><p>One semester, one-hour meetings roughly once a week.</p><ul class="steps">'+
         '<li><span>Meetings 1–2</span>Requirements and materials research</li>'+
         '<li><span>Meetings 3–4</span>Concept finalization and design</li>'+
@@ -432,12 +432,12 @@ var projects = [
         '<li><strong>Design for real users:</strong> a device only works if it fits the surgeon’s actual workflow and the hospital’s real sterilization process.</li></ul></div>';
     } },
   { id:'grip', kind:'casestudy', title:'Weightlifting Prosthetic', org:'Generational Relief in Prosthetics (GRiP) · Design team member', date:'2024\u201325', dateSort:202403,
-    tags:['User-centered design','Ideation','Blender','3D printing','Load testing'], cat:'Design team', img:{src:'img/grip-side.jpg',alt:'Side view of the 3D-printed weightlifting prosthetic showing the hook and straps'},
+    tags:['User-centered design','Ideation','Blender','3D printing','Load testing'], cat:'Design team', img:{src:'grip-side.jpg',alt:'Side view of the 3D-printed weightlifting prosthetic showing the hook and straps'},
     html:function(){
       return ''+
       '<h3 class="sech">Overview</h3><div class="callout">A 3D-printed attachment that lets an adolescent with a disability affecting one hand lift weights. It straps onto the user\u2019s hand and hooks onto dumbbells, kettlebells, barbells and handled gym machines.</div>'+
       '<div class="stats"><div class="stat"><b>35 lb</b><span>Weight the finished device let our user lift</span></div><div class="stat"><b>20 lb</b><span>Minimum load it was required to hold</span></div><div class="stat"><b>4</b><span>Kinds of equipment the hook works with</span></div></div>'+
-      '<div class="figs2"><figure class="tall"><img src="img/grip-top.jpg" alt="Top view of the prosthetic showing the hand cradle, padding and Velcro strap" loading="lazy"><figcaption>Hand cradle with padding and strap</figcaption></figure><figure class="tall"><img src="img/grip-side.jpg" alt="Side view of the prosthetic showing the lifting hook" loading="lazy"><figcaption>The hook that grips the weight</figcaption></figure></div>'+
+      '<div class="figs2"><figure class="tall"><img src="grip-top.jpg" alt="Top view of the prosthetic showing the hand cradle, padding and Velcro strap" loading="lazy"><figcaption>Hand cradle with padding and strap</figcaption></figure><figure class="tall"><img src="grip-side.jpg" alt="Side view of the prosthetic showing the lifting hook" loading="lazy"><figcaption>The hook that grips the weight</figcaption></figure></div>'+
       '<h3 class="sech">My role</h3><div class="part"><p>Design team member from March 2024 to May 2025, starting in my freshman year. Most of my work was in ideation and problem solving, and I proposed the hook concept the team built.</p></div>'+
       '<h3 class="sech">The work</h3>'+
       '<div class="part"><h4>Requirements</h4><ul><li>Fit the user comfortably</li><li>Hold at least 20 lb of free weight (dumbbell, kettlebell and similar)</li><li>Stay lightweight so it is comfortable to wear through a workout</li></ul></div>'+
@@ -468,7 +468,7 @@ var projects = [
     } },
   { id:'cssalt', kind:'casestudy', label:'Research', title:'Medical Training Models', org:'UF College of Medicine \u00b7 CSSALT \u00b7 Research Assistant', date:'2024\u201325', dateSort:202408,
     tags:['Silicone mold making','Casting','3D printing','Press-fit design','Rapid iteration'], cat:'Research',
-    img:{src:'img/cssalt-molds.jpg',alt:'Lab bench with 3D-printed mold parts and a silicone anatomical model'},
+    img:{src:'cssalt-molds.jpg',alt:'Lab bench with 3D-printed mold parts and a silicone anatomical model'},
     html:function(){
       var sub=function(t,o,a,i){return '<div class="sub"><h4>'+t+'</h4><dl><dt>Objective</dt><dd>'+o+'</dd><dt>Approach</dt><dd>'+a+'</dd><dt>Impact</dt><dd>'+i+'</dd></dl></div>'};
       return ''+
@@ -489,18 +489,18 @@ var projects = [
     } },
   { id:'dml', kind:'casestudy', label:'Class project', title:'Compressed-Air Engine', org:'Design and Manufacturing Laboratory \u00b7 UF coursework', date:'2025', dateSort:202503,
     tags:['Manual milling','Lathe','CNC','Engineering drawings','GD&T'], cat:'Coursework',
-    img:{src:'img/dml-parts.jpg',alt:'Machined aluminum engine parts in a bin'},
+    img:{src:'dml-parts.jpg',alt:'Machined aluminum engine parts in a bin'},
     html:function(){
       var fig=function(src,alt,cap,cls){return '<figure class="'+cls+'"><img src="'+src+'" alt="'+alt+'" loading="lazy"><figcaption>'+cap+'</figcaption></figure>'};
       return ''+
       '<h3 class="sech">Overview</h3><div class="callout">My team designed, drew, machined and assembled a working compressed-air engine to learn how manufacturing decisions affect mechanical performance.</div>'+
-      '<div class="figs2">'+fig('img/dml-wheel-drawing.jpg','Engineering drawing of the engine wheel with tolerances','Drawing of the engine wheel','contain')+fig('img/dml-block-drawing.jpg','Engineering drawing of the piston block','Drawing of the piston block','contain')+'</div>'+
+      '<div class="figs2">'+fig('dml-wheel-drawing.jpg','Engineering drawing of the engine wheel with tolerances','Drawing of the engine wheel','contain')+fig('dml-block-drawing.jpg','Engineering drawing of the piston block','Drawing of the piston block','contain')+'</div>'+
       '<h3 class="sech">My role</h3><div class="part"><p>Team member. I machined the engine base, taking it from CAD and drawings to a finished aluminum part.</p></div>'+
       '<h3 class="sech">The work</h3>'+
       '<div class="part"><h4>Design and drawings</h4><p>I modeled each component in CAD and produced detailed engineering drawings with tolerances for manufacturing.</p></div>'+
       '<div class="part"><h4>Machining</h4><p>I made parts using manual milling, turning on the lathe and drilling, and gained familiarity with CNC machining and what it can do.</p></div>'+
       '<div class="part"><h4>Testing</h4><p>After assembly, we tested the engine for speed, efficiency and the effect of tolerances, and documented improvements based on the performance data.</p></div>'+
-      '<div class="figs2">'+fig('img/dml-parts.jpg','Machined aluminum engine parts','Machined parts before assembly','tall')+fig('img/dml-base-cad.png','CAD model of the engine base with drilled holes','CAD model of the base I machined','contain')+'</div>'+
+      '<div class="figs2">'+fig('dml-parts.jpg','Machined aluminum engine parts','Machined parts before assembly','tall')+fig('dml-base-cad.png','CAD model of the engine base with drilled holes','CAD model of the base I machined','contain')+'</div>'+
       '<h3 class="sech">Outcome</h3><div class="part"><p>We machined, assembled and tested our engines, then used the results to document design and manufacturing improvements.</p></div>'+
       '<h3 class="sech">What I learned</h3><div class="part"><p>How tolerance and machining choices show up in the performance of a real mechanism, and hands-on experience in the machine shop.</p></div>';
     } }
